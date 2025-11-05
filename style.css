@@ -1,0 +1,161 @@
+/* ----------------------------------------------------
+   Global Styles
+---------------------------------------------------- */
+body {
+  background: #F1F1F1;
+  color: #222;
+  min-height: 100vh;
+  padding: 0;
+}
+
+header {
+  background: #fff;
+  color: #6366f1;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------
+   Typography
+---------------------------------------------------- */
+h2.fw-bold.text-primary {
+  color: #3700B3 !important;
+  font-weight: 650 !important;
+}
+
+h5.fw-bold.text-primary {
+  color: #111 !important;
+  font-weight: 600 !important;
+}
+
+/* ----------------------------------------------------
+   Generated Post Cards
+---------------------------------------------------- */
+.generated-post {
+  background: #f3f4f6;
+  color: #222;
+  border-radius: 10px;
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.platform-label {
+  background: #3700B3;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-content {
+  background: #fff;
+  color: #222;
+  padding: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* ----------------------------------------------------
+   Copy Button
+---------------------------------------------------- */
+.copy-btn {
+  background: #fff;
+  color: #222;
+  border: 1px solid #6366f1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.copy-btn:hover {
+  background: #6366f1;
+  color: #fff;
+}
+
+/* ----------------------------------------------------
+   Generate Button Styles
+---------------------------------------------------- */
+#generateBtn {
+  background: #3700B3;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#generateBtn:hover {
+  background: #4b14d6;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(55, 0, 179, 0.25);
+}
+
+#generateBtn:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 10px rgba(55, 0, 179, 0.15);
+}
+
+/* ----------------------------------------------------
+   Footer
+---------------------------------------------------- */
+.footer {
+  background: #F1F1F1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ----------------------------------------------------
+   Animations
+---------------------------------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------------------------------------------------
+   Responsive Styles
+---------------------------------------------------- */
+@media (max-width: 600px) {
+  body {
+    padding: 0 4px;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .generated-post {
+    margin-bottom: 10px;
+    font-size: 0.98rem;
+  }
+
+  .platform-label {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .copy-btn {
+    margin-left: 8px;
+    width: auto;
+    min-width: 70px;
+    font-size: 0.95rem;
+    padding: 4px 10px;
+  }
+
+  .post-content {
+    padding: 10px;
+    font-size: 0.98rem;
+  }
+
+  .footer {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}
